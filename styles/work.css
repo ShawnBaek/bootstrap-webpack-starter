@@ -2,3 +2,10 @@
 h2{
     color:skyblue;
 }
+
+#work-section {
+	height: 35vh;
+	display: flex;
+    align-items: center;
+	background: rgba(40,40,40,0.2);
+}

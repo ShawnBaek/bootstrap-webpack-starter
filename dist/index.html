@@ -5,35 +5,99 @@
         <title>ShawnBaek | UX Engineer</title>
     <link href="styles.css" rel="stylesheet"></head>
     <body>
+        <header>
+           <div class="container">
+            <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                   <img src="data:image/png;base64,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" width="auto" height="28" class="d-inline-block align-top" alt="">
+              </a>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                  <a class="nav-item nav-link active" href="index.html">About Me<span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link" href="work.html">Work</a>
+                  <a class="nav-item nav-link" href="#">Blog</a>
+                  <a class="nav-item nav-link" href="#">Hire Me</a>
+                </div>
+              </div>
+            </nav>
+            </div>
+        </header>
         
-        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="#">
-            <img src="../img/logo.png" width="auto" height="28" class="d-inline-block align-top" alt="">
-          </a>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="work.html">Work</a>
-              </li>
-                
-                
-            </ul>
-          </div>
-        </nav>
+<!--
         
         <div id="landingSection">
             <h1>Webpack with Bootstrap v4 Starter</h1>
             <h2>This is index page</h2>
         </div>
         
+-->
+
+
+        <section id="landing-section">
+            <div class="container">
+
+
+
+                <div class="row">
+
+                <h5>Hi My name is Sungwook Baek</h5>
+
+                </div>
+                <div class="row " id="landing-intro">
+        <!--			<div class="d-flex align-items-center" id="landing-role">-->
+                        <h1>I am a</h1>
+                        <div id="heading">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">UX Engineer</div>
+                                    <div class="swiper-slide">iOS Developer</div>
+                                    <div class="swiper-slide">Web Developer</div>
+                                </div>
+                            </div>
+                        </div>
+        <!--			</div>-->
+                </div>
+                <div class="row">
+
+                <h5>Thank you for coming to my workspace.</h5>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section>
+            <div class="container">
+                <div class="row">
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Pyramid -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-9">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+        </footer>
+       
+       
+       
+       
         
-    <script type="text/javascript" src="manifest.c7143171e74a68bd6806.js"></script><script type="text/javascript" src="vendor.14e54f64f1a9b8850eec.js"></script><script type="text/javascript" src="bundle.fd8ef49e02a32dc4e9bb.js"></script></body>
+    <script type="text/javascript" src="manifest.544d2336303fbfcf7e54.js"></script><script type="text/javascript" src="vendor.076371e5866cd81a711f.js"></script><script type="text/javascript" src="bundle.461f8afb58bf51a1d926.js"></script></body>
     
    
 </html>

@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Lora';
+	src: url('../fonts/Lora/Lora-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Nunito';
+	src: url('../fonts/Nunito/Nunito-Regular.ttf') format('truetype');
+}

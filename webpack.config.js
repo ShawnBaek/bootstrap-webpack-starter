@@ -4,8 +4,9 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
-const VENDOR_LIBS = ['bootstrap'];
+const VENDOR_LIBS = ['bootstrap', 'swiper'];
 const BUNDLE_LIBS = ['./src/index.js', './src/work.js'];
+
 
 
 module.exports = {
@@ -38,8 +39,29 @@ module.exports = {
                         loader: 'url-loader',
                         options: { limit: 40000}
                     },
-                    'image-webpack-loader'
+                    {
+                        loader : 'image-webpack-loader',
+                        options: { bypassOnDebug: true }
+                    }
                 ]
+            },
+            {
+                
+                test: /.(ttf|otf|eot|woff(2)?)(\?[a-z0-9]+)?$/,
+                use: [{
+                  loader: 'file-loader',
+                  options: {
+                    name: 'fonts/[name].[ext]',
+                    outputPath: 'fonts',
+                    publicPath: 'fonts'
+                  }
+                }]
+                
+            },
+            {
+              // HTML LOADER
+              test: /\.html$/,
+              loader: 'html-loader'
             }
         ]
     },
